@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="13 13 1112 363" width="1112" height="363" role="img" aria-label="Animated Sophr logo">
+<title>Sophr — intelligence assembling</title>
+<desc>Blocks assemble from the base to the tip of the symbol. The wordmark rises into view. The animation plays once and respects reduced motion preferences.</desc>
+<style>
+.block { opacity:0; transform-box:fill-box; transform-origin:center; animation:assemble .64s cubic-bezier(.16,1,.3,1) var(--delay) forwards; }
+.wordmark { transform:translateY(310px); animation:reveal 1.1s cubic-bezier(.16,1,.3,1) 1.1s forwards; }
+@keyframes assemble { 0% {opacity:0;transform:translate(var(--dx),44px) scale(.4)} 28% {opacity:1} 100% {opacity:1;transform:translate(0,0) scale(1)} }
+@keyframes reveal {from {transform:translateY(310px)} to {transform:translateY(0)}}
+.paused .block, .paused .wordmark {animation-play-state:paused}
+@media (prefers-reduced-motion:reduce) { .block {opacity:1;transform:none;animation:none} .wordmark {transform:none;animation:none} }
+</style>
+<defs><clipPath id="wordmark-window" clipPathUnits="userSpaceOnUse"><rect x="348" y="69" width="778" height="295"/></clipPath></defs>
+<g fill="#000"><rect x="25" y="320" width="27" height="28" class="block" style="--delay:0.000s;--dx:-18px" />
+<rect x="60" y="320" width="27" height="27" class="block" style="--delay:0.063s;--dx:18px" />
+<rect x="61" y="285" width="27" height="27" class="block" style="--delay:0.126s;--dx:-18px" />
+<rect x="94" y="320" width="28" height="27" class="block" style="--delay:0.189s;--dx:18px" />
+<rect x="95" y="285" width="27" height="27" class="block" style="--delay:0.252s;--dx:-18px" />
+<rect x="129" y="320" width="27" height="27" class="block" style="--delay:0.315s;--dx:18px" />
+<rect x="129" y="285" width="27" height="27" class="block" style="--delay:0.378s;--dx:-18px" />
+<rect x="168" y="320" width="20" height="18" class="block" style="--delay:0.441s;--dx:18px" />
+<rect x="163" y="285" width="26" height="27" class="block" style="--delay:0.504s;--dx:-18px" />
+<rect x="196" y="285" width="27" height="27" class="block" style="--delay:0.567s;--dx:18px" />
+<rect x="196" y="251" width="27" height="27" class="block" style="--delay:0.630s;--dx:-18px" />
+<rect x="230" y="251" width="27" height="27" class="block" style="--delay:0.693s;--dx:18px" />
+<rect x="230" y="217" width="27" height="27" class="block" style="--delay:0.756s;--dx:-18px" />
+<rect x="196" y="217" width="27" height="27" class="block" style="--delay:0.819s;--dx:18px" />
+<rect x="196" y="184" width="27" height="27" class="block" style="--delay:0.882s;--dx:-18px" />
+<rect x="163" y="217" width="26" height="27" class="block" style="--delay:0.945s;--dx:18px" />
+<rect x="163" y="184" width="26" height="26" class="block" style="--delay:1.008s;--dx:-18px" />
+<rect x="129" y="184" width="27" height="26" class="block" style="--delay:1.071s;--dx:18px" />
+<rect x="129" y="150" width="27" height="27" class="block" style="--delay:1.134s;--dx:-18px" />
+<rect x="163" y="150" width="26" height="27" class="block" style="--delay:1.197s;--dx:18px" />
+<rect x="163" y="117" width="26" height="27" class="block" style="--delay:1.260s;--dx:-18px" />
+<rect x="196" y="117" width="27" height="27" class="block" style="--delay:1.323s;--dx:18px" />
+<rect x="208" y="85" width="27" height="26" class="block" style="--delay:1.386s;--dx:-18px" />
+<rect x="230" y="117" width="27" height="20" class="block" style="--delay:1.449s;--dx:18px" />
+<rect x="242" y="85" width="27" height="26" class="block" style="--delay:1.512s;--dx:-18px" />
+<rect x="276" y="85" width="26" height="19" class="block" style="--delay:1.575s;--dx:18px" />
+<rect x="286" y="53" width="26" height="26" class="block" style="--delay:1.638s;--dx:-18px" />
+<rect x="320" y="25" width="28" height="26" class="block" style="--delay:1.701s;--dx:18px" />
+</g>
+<g clip-path="url(#wordmark-window)" fill="#000"><g class="wordmark"><path id="letter-s" fill-rule="evenodd" d="M465 166 L441 185 C432 174 423 168 409 168 C394 168 383 176 383 187 C383 200 397 204 416 209 C447 217 471 228 471 256 C471 284 447 303 410 303 C383 303 361 293 348 272 L372 253 C383 268 395 275 411 275 C428 275 438 267 438 256 C438 244 425 240 405 234 C375 226 349 215 349 187 C349 159 375 140 409 140 C434 140 453 150 465 166 Z" />
+<path id="letter-o" fill-rule="evenodd" d="M644 222 C644 268 609 302 562 302 C515 302 480 268 480 222 C480 176 515 141 562 141 C609 141 644 176 644 222 Z M610 222 C610 193 590 172 562 172 C534 172 514 193 514 222 C514 251 534 272 562 272 C590 272 610 251 610 222 Z" />
+<path id="letter-p" fill-rule="evenodd" d="M658 146 H691 V168 C704 150 724 141 746 141 C789 141 820 175 820 222 C820 269 789 302 746 302 C723 302 705 293 691 276 V364 H658 Z M786 222 C786 192 766 172 739 172 C711 172 691 193 691 222 C691 251 711 272 739 272 C766 272 786 252 786 222 Z" />
+<path id="letter-h" fill-rule="evenodd" d="M834 69 H868 V171 C881 152 900 142 923 142 C964 142 990 169 990 214 V298 H956 V218 C956 191 942 175 919 175 C889 175 868 194 868 224 V298 H834 Z" />
+<path id="letter-r" fill-rule="evenodd" d="M1014 148 H1046 V176 C1058 155 1078 145 1099 145 C1104 145 1109 145 1113 147 V179 C1107 178 1102 177 1096 177 C1066 177 1047 195 1047 227 V298 H1014 Z" />
+</g></g>
+</svg>
